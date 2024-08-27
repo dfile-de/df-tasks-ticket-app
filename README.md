@@ -1,4 +1,4 @@
-# Task management demo app with React and Processwire
+# Task management demo app with React and ProcessWire
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
