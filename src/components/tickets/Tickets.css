@@ -1,0 +1,87 @@
+.tickets{
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+@media (max-width: 768px) {
+  .tickets{
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+.tickets .ticket{
+  flex: 0 0 calc(50% - 0.5rem);
+  border-radius: var(--border-radius);
+  background: rgba(255,255,255,0.2);
+  padding: 1rem;
+}
+
+.tickets .ticket .date{
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+
+.tickets .ticket .date svg{
+ display: inline;
+ width: 20px;
+ margin-right: 10px;
+ margin-top: -5px;
+}
+
+.tickets .ticket .status .sps.in-progress {
+  background: var(--ok-color);
+  padding: 2px 5px;
+  border-radius: var(--border-radius);
+}
+
+.tickets .ticket .ticketheader{
+  display: flex;
+  cursor: pointer;
+}
+
+.tickets .ticket .ticketheader:hover{
+ text-decoration: underline;
+}
+
+.tickets .ticket .ticketheader svg{
+  margin-left: auto;
+  margin-top: 10px;
+  transition: rotate 0.2s ease-in-out;
+}
+
+.tickets .ticket .ticketheader.open svg{
+ rotate: -180deg;
+}
+
+.tickets .ticket h2{
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.tickets .ticket .beschreibung{
+font-size: 0.9rem;
+line-height: 1.2rem;
+}
+
+.tickets .ticket.priority-high{
+  border-left:5px solid var(--alert-color);
+}
+
+.tickets .ticket.priority-medium{
+  border-left:5px solid var(--medium-color);
+}
+
+.tickets .ticket.priority-low{
+  border-left:5px solid var(--ok-color);
+}
+
+.tickets .ticket button{
+  margin-right: 10px;
+  font-size: 0.8rem;
+}

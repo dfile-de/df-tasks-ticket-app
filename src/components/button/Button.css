@@ -1,0 +1,35 @@
+button{
+    cursor: pointer;
+    border:none;
+    border-radius: 3px;
+    padding: 0.5rem;
+    background: #fff;
+    color: var( --sec-color);
+    text-transform: uppercase;
+}
+button.alert{
+    background: rgba(199, 51, 14,0.8);
+    color: #fff;
+}
+
+button.medium{
+    background: rgba(92, 18, 177,0.8);
+    color: #fff;
+}
+
+button.ok{
+    background: rgba(13, 150, 125,0.8);
+    color: #fff;
+}
+
+button.active.alert{
+    box-shadow: 0 0 0 4px var(--alert-color);
+}
+
+button.active.medium{
+    box-shadow: 0 0 0 4px var(--medium-color);
+}
+
+button.active.ok{
+    box-shadow: 0 0 0 4px var(--ok-color);
+}
