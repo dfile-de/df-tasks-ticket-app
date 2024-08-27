@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# A simple demo of a task management application built with React, Node.js, and Processwire Backend
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
